@@ -9,9 +9,9 @@ function App() {
 
       <div className="cards">
         <Card title="card1" description="card1 desc" />
-        <Card />
-        <Card />
-        <Card />
+        <Card title="card2" description="card2 desc" />
+        <Card title="card3" description="card3 desc" />
+        <Card title="card4" description="card4 desc" />
       </div>
 
       <Footer />
