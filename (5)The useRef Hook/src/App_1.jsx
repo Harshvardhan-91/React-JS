@@ -6,9 +6,10 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
 
-  const btnRef = useRef(0);
+  const a = useRef(0);
   useEffect(() => {
-    console.log(`first rendering..`);
+    a.current = a.current + 1;
+    console.log(`rendering and the value of a is ${a.current}..`);
   });
 
   return (
@@ -23,7 +24,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button ref={btnRef} onClick={() => setCount((count) => count + 1)}>
+        <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
